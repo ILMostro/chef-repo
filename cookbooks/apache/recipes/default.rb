@@ -18,5 +18,5 @@ end
 service 'apache2' do
   service_name 'httpd'
   # Start the service and make sure it's enabled after restart
-  action [:start, :enabled]
+  action [:start, :enable]
 end
