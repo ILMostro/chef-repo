@@ -20,3 +20,6 @@ service 'apache2' do
   # Start the service and make sure it's enabled after restart
   action [:start, :enable]
 end
+
+# Include items from another recipe
+include_recipe 'apache::webpage'
